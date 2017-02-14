@@ -1,0 +1,63 @@
+<script>
+    /*
+    특수한 숫자 상수
+    1. Infinity : 무한대를 나타내는 특수 값
+    2. NaN : 숫자가 아닌 특수한 값
+    3. Number.MAX_VALUE : 표현 가능한 가장 큰 숫자
+    4. Number.MIN_VALUE : 표현 가능한(0에 가장 가까운) 가장 작은 숫자
+    5. Number.NaN : 숫자가 아닌 특수 값
+    6. Number.POSITIVY_INFINITY : 양의 무한대를 표현하는 특수 값
+    7. Number.NEGATIVE_INFINITY : 음의 무한대를 표현하는 특수 값
+    */
+    
+    //문자열 기본 기능 몇 가지
+//    var str = "JavaScript";
+//
+//    console.log(str.length);
+//    
+//    console.log(str.charAt(str.length - 1));
+//    
+//    str.substring(1, 4); //리턴값이 중요
+//    
+//    str.indexOf('a');
+    
+    //문자열과 숫자의 변환
+    console.log("//문자열과 숫자의 변환");
+    var num = 100;
+    var str = num + " 문자열";
+    console.log(str);
+    
+    //문자열을 숫자로 변환
+    console.log("//문자열을 숫자로 변환");
+    console.log("20" + "7");
+    console.log(20 + "7");
+    console.log("20" + 7);
+    
+    var n = Number("30");
+    console.log(typeof(n));
+    console.log(typeof(30));
+    
+    //Number객체를 이용한 변환
+    console.log("//Number객체를 이용한 변환");
+    console.log(Number("30"));
+    console.log(Number("30test"));
+    
+    console.log(parseInt("30test"));
+    console.log(parseInt("30test50"));
+    console.log(parseInt("test50"));
+    console.log(parseInt("test 50"));
+    
+    //boolean 타입의 변환
+    console.log("//boolean 타입의 변환");
+    if(""){
+        alert("test");
+    }
+        
+    //1. boolean이 필요한 곳에 숫자가 올 경우 : 0, NaN은 false / 그 외는 true
+    //2. boolean이 필요한 곳에 문자열이 올 경우 : 빈 문자열은 false / 그 외는 true
+    
+    //비교연산자 == 를 사용했을 때 같은 값으로 판별되는 경우
+    //1. true == 1; //true
+    //2. false == 0 == "" //true
+    
+</script>

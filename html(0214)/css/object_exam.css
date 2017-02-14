@@ -1,0 +1,21 @@
+table{
+    width: 500px;
+}
+
+table tr{
+    height: 30px;
+}
+
+table th{
+    width: 100px;
+    text-align: right;
+}
+
+table td{
+    padding: 5px;
+}
+
+input[type="text"], [type="email"]{
+    font-size: 12pt;
+    width: 90%;
+}

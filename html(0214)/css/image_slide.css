@@ -1,0 +1,26 @@
+div{
+    display: inline-block;
+}
+
+/*아이디 접근 (#)*/
+#divContainer{
+    text-align: center;
+    margin: 0 10%;
+    width: 80%;
+}
+
+/*클래스 접근 (.)*/
+.divSub{
+    vertical-align: middle;
+    width: 60px;
+    height: 500px;
+}
+
+.div60{
+    text-align: center;
+    width: 60%;
+}
+
+h1{
+    text-align: center;
+}

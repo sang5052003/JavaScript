@@ -1,0 +1,42 @@
+<!--서버에서 넘어온 데이터의 형태가 Json이라고 가정-->
+<!doctype>
+<html>
+    <head>
+        <title>Object Exam</title>
+        <link rel="stylesheet" type="text/css" href="./css/object_exam.css">
+        <script src="./js/oject_exam.js"></script>
+    </head>
+    
+    <body>
+        <h1>사용자 정보</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <td><input id="txtId" type="text"></td>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td><input id="txtName" type="text"></td>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td>
+                    <input id="rdoGenderMale" name="rdoGender" type="radio">
+                    <label for="rdoGenderMale">Male</label>
+                    <input id="rdoGenderFemale" name="rdoGender" type="radio">
+                    <label for="rdoGenderFemale">Female</label>
+<!--                    for 누구를 위해서 있다(라벨이 라디오버튼과 한몸)-->
+                </td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td><input id="txtEmail" type="email"></td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td><input id="txtAddress" type="text"></td>
+            </tr>
+        </table>
+    </body>
+
+</html>

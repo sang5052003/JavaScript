@@ -1,0 +1,47 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="./js/bookInfo.js"></script>
+        <title>Book Info</title>    
+    </head>
+    
+    <body>
+        <select id="bookList" onchange="selBook()">
+            <option value="init">===== 선택 =====</option>
+            <option value="headFirst">헤드퍼스트 자바</option>
+            <option value="thisIsJava">이것이 자바다</option>
+            <option value="godOfJava">자바의 신</option>
+        </select>
+        <br><br>
+        <table border="1">
+            <tr>
+                <th>제목</th>
+                <td>
+                    <input type="text" id="title">
+                </td>
+            </tr>
+            <tr>
+                <th>출판사</th>
+                <td>
+                    <input type="text" id="publisher">
+                </td>
+            </tr>
+            <tr>
+                <th>저자</th>
+                <td>
+                    <input type="text" id="author">
+                </td>
+            </tr>
+            <tr>
+                <th>이미지</th>
+                <td id="tdBookImg">
+<!--                   링크 이미지 주소복사-->
+                    <img scr="" id="bookImg" width="160px" height="220px">
+                </td>
+            </tr>
+        </table>
+    </body>
+          
+
+</html>

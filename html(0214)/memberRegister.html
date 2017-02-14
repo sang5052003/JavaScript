@@ -1,0 +1,86 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/memberRegister.css">
+        <script src="js/memberRegister.js"></script>
+        <title>회원가입</title>
+    </head>
+    
+    <body>
+        <h1>회원가입</h1>
+        
+        <table border="1">
+            <tr>
+                <th>이름</th>
+                <td>
+                    <input type="text" id="name">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>아이디</th>
+                <td>
+                    <input type="text" id="id">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>비밀번호</th>
+                <td>
+                    <input type="text" id="password">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>비밀번호 확인</th>
+                <td>
+                    <input type="text" id="passwordCheck" onkeyup="checkPasswordOutput()"> 
+                    <input type="text" id="passwordCheckString" style="border:0px">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>이메일</th>
+                <td>
+                    <input type="text" id="emailName">@
+                    <select name="선택하세요" id="selectDomain" onchange="selDomain()">
+                        <option value="선택하세요" selected>선택하세요</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="google.com">google.com</option>
+                        <option value="daum.com">daum.com</option>
+                        <option value="직접입력">직접입력</option>
+                    </select>
+                    <input type="text" id="domainName" onkeypress="inputDomainName()">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>휴대폰 번호</th>
+                <td>
+                    <input type="tel" id="phoneNumber1" size="4" maxlength="3" onkeypress="onlyNumber()">
+                    <input type="tel" id="phoneNumber2" size="4" maxlength="4" onkeypress="onlyNumber()">
+                    <input type="tel" id="phoneNumber3" size="4" maxlength="4" onkeypress="onlyNumber()">
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <th>주소</th>
+                <td>
+                    <input type="text" id="addressBefore" size="4">
+                    <input type="text" id="addressAfter" size="4">
+                    <input type="button" id="addressBtn" value="주소입력">
+                    <br>
+                    <input type="text" id="addressLineOne" size="50">
+                    <br>
+                    <input type="text" id="addressLineTwo" size="50">
+                </td>
+            </tr>
+            
+        </table>
+        
+        <br>
+        <input type="button" value="회원가입" onclick="checkForm()">
+    </body>
+</html>

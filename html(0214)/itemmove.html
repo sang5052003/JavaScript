@@ -1,0 +1,66 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .with100{
+                width: 100px;
+            }
+            .btnBox{
+                display: inline-block;
+            }
+        </style>
+        <title>리스트 항목 이동</title>
+        <script>
+            window.onload = function(){
+                document.getElementById("toLeft").onclick = rightToLeft;
+                document.getElementById("toRight").onclick = leftToRight;
+            }
+            
+            var rightToLeft = function(){
+                var rightItems = document.getElementById("rightItem");
+                var rightItem = rightItems.options[rightItems.selectedIndex];
+                var leftItems = document.getElementById("leftItem");
+                leftItems.appendChild(rightItem);
+            }
+            
+            var leftToRight = function(){
+                var leftItems = document.getElementById("leftItem");
+                var leftItem = leftItems.options[leftItems.selectedIndex];
+                var rightItems = document.getElementById("rightItem");
+                rightItems.appendChild(leftItem);
+            }
+            
+        </script>
+    </head>
+    
+    <body>
+        <h1>리스트 항목 이동</h1>
+        <select id="leftItem" class="with100" size="6">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+        </select>
+        
+        <div class="btnBox">
+<!--            & 표시할 문자가 나온다-->
+            <button id="toLeft">&lt;&lt;</button>
+            <br><br>
+            <button id="toRight">&gt;&gt;</button>
+        </div>
+        
+        
+        <select id="rightItem" class="with100" size="6">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+            <option>F</option>
+        </select>
+    </body>
+
+</html>
