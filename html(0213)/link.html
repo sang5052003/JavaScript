@@ -1,0 +1,36 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Link Example</title>
+        <script>
+            window.onload = function()
+            {
+                setLink();
+            }
+            
+            function setLink()
+            {
+                var linkArray = document.getElementsByName("link");
+                for(var i = 0; i < linkArray.length; i++)
+                {
+                    linkArray[i].href = linkArray[i].innerHTML;
+                }
+            }
+            
+        </script>
+    
+    </head>
+    
+    <body>
+        <h1>Search Web Site</h1>
+        <ul>
+            <li>구글(<a name="link" target="_blank" href="#">http://www.google.com</a>)</li>
+            <li>네이버(<a name="link" target="_blank" href="#">http://www.naver.com</a>)</li>
+            <li>다음(<a name="link" target="_blank" href="#">http://www.daum.net</a>)</li>
+            <li>네이트(<a name="link" target="_blank" href="#">http://www.nate.com</a>)</li>
+        </ul>
+    
+    </body>
+
+</html>
