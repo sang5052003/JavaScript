@@ -1,0 +1,45 @@
+<!doctype>
+<html>
+    <head>
+        <title>이미지 슬라이드</title>    
+        <script src="js/jquery-3.1.1.js"></script>
+        
+        <style>
+            #clickMe{
+                background: #009955;
+                padding: 20px;
+                text-align: center;
+                width: 450px;
+                display: block;
+                border: 2px solid #000;
+            }
+            #picFrame{
+                background: #999999;
+                padding: 20px;
+                width: 450px;
+                display: none;
+                border: 2px solid #000;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="clickMe">Show Image</div>
+        <div id="picFrame">
+            <img src="images/dog.jpg" width="450px">
+        </div>
+        
+        <script>
+            /*window.onload -> (document).ready*/
+            $(document).ready(function(){
+                /*#은 id의 선택자*/
+               $("#clickMe").click(function(){
+                   /*img 태그*/
+                  $("img").fadeIn(1000);
+                  $("#picFrame").slideToggle("slow"); 
+               });
+            });
+        </script>
+        
+    </body>
+</html>

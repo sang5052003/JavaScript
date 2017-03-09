@@ -1,0 +1,33 @@
+<!doctype>
+<html>
+    <head>
+        <title></title>
+        <script src="js/jquery-3.1.1.js"></script>
+    </head>
+    
+    <body>
+    
+        <div>
+            내용입력 : <input type="test" name="name"><br>
+            <button>확인</button>
+        </div>
+        
+        <script>
+            /*val 메소드 사용*/
+            $("button").click(function(){
+                $("input").val("Hello");
+               //$("div").text($("input").val());
+            });
+            
+            /*$("input").val("Hello").css("color", "#cccccc").focus(function(){
+               $(this).val("").css("color", "red");
+            });*/
+            
+            //one 한번만 이벤트를 원할 때
+            $("input").val("Hello").css("color", "#cccccc").one("focus", function(){
+               $(this).val("").css("color", "red");
+            });
+            
+        </script>
+    </body>
+</html>
